@@ -14,3 +14,8 @@ command for interacting with the database
 - \d to see all tables
 - \dt to see all columns in a table
 - \c to connect to a database
+
+### Deployment Details
+Frontend: Netlify (React)
+Backend: Heroku (Express/Node)
+Database: Elephantsql.com (PostgreSQL)

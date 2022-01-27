@@ -7,7 +7,7 @@ const List = () => {
   // delete a todo
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:4000/${id}`, {
+      await fetch(`https://perntodo-emonfromearth.herokuapp.com/${id}`, {
         method: "DELETE",
       });
       setTodos(todos.filter((todo) => todo.id !== id));
@@ -19,7 +19,7 @@ const List = () => {
   // get all todos
   const getTodos = async () => {
     try {
-      const response = await fetch("http://localhost:4000/");
+      const response = await fetch("https://perntodo-emonfromearth.herokuapp.com/");
       const data = await response.json();
       setTodos(data);
     } catch (error) {

@@ -7,7 +7,7 @@ const Input = () => {
         try {
             e.preventDefault();
             const body = { description: value };
-            await fetch('http://localhost:4000/', {
+            await fetch('https://perntodo-emonfromearth.herokuapp.com/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

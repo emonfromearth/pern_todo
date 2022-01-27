@@ -1,13 +1,15 @@
 const pg = require('pg');
 const Pool = pg.Pool;
+// dotenv is used to read the .env file
+require('dotenv').config();
 
 // database configuration data
 const config = {
-    user: 'zrgumgzu',
-    password: 'VZ8Tmf9HuELPO1siZM_gl9CA2AAlg7SA',
-    host: 'arjuna.db.elephantsql.com',
-    port: 5432,
-    database: 'zrgumgzu',
+    user: process.env.USER,
+    password: process.env.PASS,
+    host: process.env.HOST,
+    port: process.env.DATABASE_PORT,
+    database: process.env.DATABASE,
 };
 
 // setup database connection with config data

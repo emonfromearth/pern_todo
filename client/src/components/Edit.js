@@ -6,7 +6,7 @@ const Edit = ({todo}) => {
         e.preventDefault();
         try {
             const body = {description};
-            await fetch(`http://localhost:4000/${todo.id}`, {
+            await fetch(`https://perntodo-emonfromearth.herokuapp.com/${todo.id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

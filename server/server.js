@@ -62,7 +62,8 @@ app.delete('/:id', async (req, res) => {
     }
 });
 
+const PORT = process.env.SERVER_PORT || 5000;
 // server is running on port 5000
-app.listen(4000, () => {
-    console.log('Server is running on port 4000');
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
