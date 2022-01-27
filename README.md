@@ -16,6 +16,6 @@ command for interacting with the database
 - \c to connect to a database
 
 ### Deployment Details
-Frontend: Netlify (React)
-Backend: Heroku (Express/Node)
-Database: Elephantsql.com (PostgreSQL)
+- Frontend: Netlify (React)
+- Backend: Heroku (Express/Node)
+- Database: Elephantsql.com (PostgreSQL)
