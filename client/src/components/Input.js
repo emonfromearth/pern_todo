@@ -7,15 +7,14 @@ const Input = () => {
         try {
             e.preventDefault();
             const body = { description: value };
-            const response =  await fetch('http://localhost:4000/', {
+            await fetch('http://localhost:4000/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(body)
             });
-            setValue('');
-            console.log(response);
+            window.location = '/';
         } catch (error) {
             console.log(error.message);
         }

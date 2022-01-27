@@ -3,7 +3,7 @@ import react from 'react';
 const Edit = () => {
     return (
         <div>
-            <h1>Edit</h1>
+            <button className='btn btn-success'>Edit</button>
         </div>
     )
 }
